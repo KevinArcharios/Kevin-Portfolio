@@ -1,37 +1,79 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Portfolio Kevin</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+		<!-- Fonts Google -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet" />
 
-  <!-- Boorstrap CSS-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+		<!-- Bootstrap CSS-->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
 
-  <!-- Tailwind -->
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+		<!-- Bootstrap Icon -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
 
-  <!-- Tailwind custom -->
-  <style type="text/tailwindcss">
-    @import "tailwindcss" prefix(tw);
-  </style>
+		<!-- Tailwind -->
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-  <!-- CSS custom -->
-  <link rel="stylesheet" href="style.css">
-</head>
+		<!-- Tailwind custom -->
+		<style type="text/tailwindcss">
+			@import "tailwindcss" prefix(tw);
 
-<body>
-  
+			@theme {
+				--font-title: "Montserrat", sans-serif;
+				--color-primary: #4ec9d1;
+				--color-accent: #d1574e;
+				--color-primary-dark: #1de2b7;
+				--color-accent-dark: #e21d48;
+			}
+		</style>
 
-  <!-- Bootstrap JS-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
+		<!-- CSS custom -->
+		<link rel="stylesheet" href="style.css" />
+	</head>
 
-  <!-- Javascript custom -->
-  <script src="script.js"></script>
-</body>
+	<body class="tw:h-500 tw:!bg-slate-200">
+		<!-- Navbar Section Start -->
 
+		<!-- Navbar Section End -->
+
+		<!-- Hero Section Start (BELUM JADI DAN AKAN DISELESAIKAN TERAKHIR SAJA) -->
+		<section class="min-vh-100 tw:bg-[url(./src/img/hero.png)] tw:bg-cover tw:bg-top-left">
+			<h1 class="text-uppercase tw:!font-title fw-bold p-5 lh-base">welcome <br />to my <br />portfolio</h1>
+		</section>
+
+		<!-- Hero Section End -->
+
+		<!-- About Section Start -->
+		<section id="about" class="d-flex py-5 ps-5 tw:!bg-primary tw:!text-zinc-800">
+			<div class="tw:w-128">
+				<img src="src/img/hero.png" alt="About Image" />
+			</div>
+			<div class="flex-fill p-5">
+				<h3>Hi! 👋</h3>
+				<h2 class="fw-bold tw:tracking-wide tw:!font-title">I'm <span class="tw:!text-accent fw-bolder">Kevin</span> Ridwan Simanjuntak</h2>
+				<h3>Informatic Student</h3>
+				<p class="mb-5 fs-5">I am a computer science student currently learning to become a web, software, and game developer.</p>
+				<a href="#projects" class="btn tw:!bg-accent tw:!text-slate-50 p-3 rounded-4 me-3">View Project  <i class="bi bi-box-arrow-up-right ps-2"></i></a>
+				<a href="#contact" class="btn tw:!bg-accent tw:!text-slate-50 p-3 rounded-4">Contact me <i class="bi bi-telephone-inbound ps-2"></i></a>
+			</div>
+		</section>
+		<!-- About Section End -->
+
+		<!-- Skills Section Start -->
+		<section id="skills" class="py-5 ps-5 tw:!text-zinc-800">
+			<h2>Skills</h2>
+		</section>
+		<!-- Skills Section End -->
+
+		<!-- Bootstrap JS-->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+		<!-- Javascript custom -->
+		<script src="script.js"></script>
+	</body>
 </html>
