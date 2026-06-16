@@ -4,8 +4,122 @@
 
 body {
 	background: linear-gradient(135deg, #edf3ff 0%, #e5ebf7 45%, #effbff 100%);
+	height: 6000px;
 }
 
+/* Hero Section Start */
+#hero {
+	background: radial-gradient(circle at 20% 20%, rgba(59, 130, 246, 0.3), transparent 65%), radial-gradient(circle at 80% 60%, rgba(139, 92, 246, 0.3), transparent 50%), #f8fafc;
+	background-attachment: fixed;
+}
+
+#hero img {
+	top: 20%;
+}
+
+#hero h1 {
+	margin-top: 10rem;
+	line-height: 3.5rem;
+}
+
+#hero h1 span:nth-child(1) {
+	color: #fbbf24;
+	font-family: "Caveat", cursive;
+	font-weight: 900;
+	letter-spacing: 4px;
+}
+
+#hero h1 span:nth-child(3) {
+	color: #162443;
+	font-size: 6rem;
+	font-weight: 800;
+}
+
+.hero-title {
+	position: relative;
+	display: inline-block;
+	font-size: 8rem;
+	font-weight: 800;
+	color: #14224f;
+	z-index: 2;
+}
+
+.highlight {
+	position: absolute;
+	left: 2%;
+	top: 34%;
+	width: 20%;
+	height: 4rem;
+	z-index: 1;
+}
+
+.highlight path {
+	fill: rgba(139, 92, 246, 0.3);
+}
+
+#hero h2 {
+	color: #495362;
+	margin-left: 5%;
+	line-height: 2rem;
+}
+
+#hero a {
+	margin-left: 1rem;
+}
+
+.hero-btn {
+	border: 2px solid #3b82f6;
+	background: rgba(255, 255, 255, 0.6);
+	backdrop-filter: blur(10px);
+	color: #162443;
+	box-shadow: 0 10px 30px rgba(59, 131, 246, 0.22);
+	transition: 0.3s ease-in-out;
+	margin-right: 1rem;
+}
+
+.hero-btn:hover {
+	background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+	color: white;
+	box-shadow: 0 15px 40px rgba(139, 92, 246, 0.34);
+	transform: translateY(-0.35rem);
+}
+
+.hero-btn span {
+	transition: transform 0.3s ease;
+}
+
+.hero-btn:hover span {
+	transform: translateX(0.35rem);
+}
+
+.hero-icon {
+	top: 0;
+	width: 100%;
+	height: 100vh;
+}
+
+.hero-icon img:nth-child(1) {
+	transform: rotate(24deg);
+	right: 30%;
+	filter: drop-shadow(6px 8px 12px rgba(78, 81, 244, 0.22));
+}
+
+.hero-icon img:nth-child(2) {
+	right: 20%;
+	transform: translateY(7rem) rotate(36deg);
+	filter: drop-shadow(6px 8px 12px rgba(78, 81, 244, 0.22));
+}
+
+.hero-icon img:nth-child(3) {
+	right: 22%;
+	transform: translateY(18rem) rotate(16deg);
+	filter: drop-shadow(6px 8px 12px rgba(78, 81, 244, 0.22));
+}
+
+/* Hero Section End */
+
+/*  */
+/* SKills Section Start */
 .skills-section {
 	background: linear-gradient(145deg, rgba(240, 244, 255, 0.95), rgba(229, 236, 248, 0.9));
 }
@@ -69,4 +183,4 @@ body {
 		width: calc(50% - 0.45rem);
 	}
 }
-
+/* SKills Section End */
