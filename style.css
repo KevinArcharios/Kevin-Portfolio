@@ -313,13 +313,12 @@ body {
 }
 
 .project-card {
-	transition: 0.3s ease;
+	transition: 0.2s ease;
 }
 
 .project-card:hover {
-	transform: translateY(-3px);
-	box-shadow: 0 10px 20px rgba(139, 92, 246, 0.12);
-	border: 1px solid #8a5cf663;
+	box-shadow: 0 10px 20px rgba(138, 92, 246, 0.21);
+	border: 1px solid #8a5cf687;
 }
 
 .card-body p {
