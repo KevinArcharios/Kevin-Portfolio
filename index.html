@@ -253,95 +253,393 @@
 				<div class="row mb-5">
 					<div class="col-lg-8">
 						<span class="projects-tag d-inline-block fs-5 fw-semibold mb-2"
-							>My projects</span
+							>My Projects</span
 						>
-						<h2 class="projects-title fs-1 fw-bold mb-3">
-							Technologies & Tools
-						</h2>
+						<h2 class="projects-title fs-1 fw-bold mb-3">Website & Design</h2>
 						<p class="projects-desc ps-6">
-							Technologies, frameworks, and tools I use to build modern and
-							user-friendly digital experiences.
+							A collection of projects where I explore design, development, and
+							creative problem solving through modern web experiences.
 						</p>
 					</div>
 				</div>
 
-				<div class="row g-4">
-					<div class="col-lg-6">
-						<div class="projects-card rounded-4 h-100 overflow-hidden">
-							<a data-bs-toggle="modal" data-bs-target="#exampleModal">
-								<img
-									src="./src/img/Mental-health.jpg"
-									alt="Mental Health Website"
-									class="object-fit-cover h-50 w-100 rounded-3 card-img-top"
-								/>
-							</a>
-							<h3 class="pt-4 fw-semibold fs-4">Mental Health Website</h3>
-							<p class="fs-6">
-								Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil,
-								commodi similique. Dolorem, doloremque, modi nesciunt odit et
-								nam aperiam fuga minima optio sed voluptates libero explicabo.
-								Amet ullam cum rerum!
-							</p>
-							<!-- Button trigger modal -->
-							<button
-								type="button"
-								class="btn btn-primary"
-								data-bs-toggle="modal"
-								data-bs-target="#exampleModal"
-							>
-								Launch demo modal
-							</button>
+				<div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
+					<div class="col">
+						<div class="project-card card h-100">
+							<div class="card-img overflow-hidden">
+								<a
+									data-bs-toggle="modal"
+									data-bs-target="#modal-mental-health"
+									style="cursor: pointer"
+								>
+									<img
+										src="./src/img/Mental-health.jpg"
+										class="card-img-top"
+										alt="Mental Health Website"
+									/>
+								</a>
+							</div>
+							<div class="card-body p-4">
+								<h5 class="card-title fw-bold fs-4">Mental Health Website</h5>
+								<p class="card-text fs-6">
+									A modern mental health website designed to provide helpful
+									resources, self-assessment tools, and a user-friendly
+									experience.
+								</p>
+								<!-- Button trigger modal -->
+								<button
+									type="button"
+									class="btn btn-project pe-5"
+									data-bs-toggle="modal"
+									data-bs-target="#modal-mental-health"
+								>
+									See detail <i class="bi bi-arrow-right"></i>
+								</button>
 
-							<!-- Modal -->
-							<div
-								class="modal fade"
-								id="exampleModal"
-								tabindex="-1"
-								aria-labelledby="exampleModalLabel"
-								aria-hidden="true"
-							>
-								<div class="modal-dialog">
-									<div class="modal-content">
-										<div class="modal-header">
-											<h1 class="modal-title fs-5" id="exampleModalLabel">
-												Modal title
-											</h1>
+								<!-- Modal -->
+								<div class="modal fade" id="modal-mental-health" tabindex="-1">
+									<div class="modal-dialog modal-xl modal-dialog-centered">
+										<div class="modal-content border-0 rounded-4 shadow-lg">
 											<button
 												type="button"
-												class="btn-close"
+												class="btn-close position-absolute top-0 end-0 m-4 shadow-none z-3"
 												data-bs-dismiss="modal"
-												aria-label="Close"
 											></button>
-										</div>
-										<div class="modal-body">...</div>
-										<div class="modal-footer">
-											<button
-												type="button"
-												class="btn btn-secondary"
-												data-bs-dismiss="modal"
-											>
-												Close
-											</button>
-											<button type="button" class="btn btn-primary">
-												Save changes
-											</button>
+
+											<div class="modal-body p-4">
+												<div class="row g-4">
+													<div class="col-lg-4">
+														<a
+															href="https://kevinarcharios.github.io/Mental-Health/"
+															target="_blank"
+														>
+															<img
+																src="./src/img/Mental-health-modal.jpg"
+																alt="Mental Health Website"
+																class="project-image img-fluid rounded-4 shadow-sm"
+															/>
+														</a>
+													</div>
+
+													<div
+														class="col-lg-8 d-flex flex-column justify-content-center"
+													>
+														<h2 class="fw-bold mb-3">Mental Health Platform</h2>
+
+														<p class="text-secondary mb-4">
+															Mental Health Platform is a front-end web project
+															developed using HTML, CSS, and JavaScript. The
+															website was created to make mental health
+															information more accessible through a clean,
+															modern, and easy-to-use interface. Users can
+															explore educational content, discover helpful
+															resources, and interact with features designed to
+															create a more engaging experience. Throughout this
+															project, I focused on responsive design,
+															user-friendly layouts, and visual consistency
+															across different screen sizes. It also helped me
+															strengthen my understanding of front-end
+															development while learning how thoughtful design
+															can improve the way users interact with digital
+															content.
+														</p>
+
+														<div class="d-flex flex-wrap gap-2 mb-4">
+															<span class="badge text-bg-light border px-3 py-2"
+																>HTML</span
+															>
+															<span class="badge text-bg-light border px-3 py-2"
+																>CSS</span
+															>
+															<span class="badge text-bg-light border px-3 py-2"
+																>JavaScript</span
+															>
+														</div>
+
+														<div class="d-flex gap-3 flex-wrap">
+															<a
+																href="https://github.com/KevinArcharios/Mental-Health"
+																target="_blank"
+																class="btn btn-outline-primary px-4 py-2 rounded-3 fw-semibold"
+															>
+																<i class="bi bi-github me-2"></i>
+																View Source
+															</a>
+
+															<a
+																href="https://kevinarcharios.github.io/Mental-Health/"
+																target="_blank"
+																class="btn px-4 py-2 rounded-3 fw-semibold text-white project-demo-btn"
+															>
+																<i class="bi bi-box-arrow-up-right me-2"></i>
+																Live Demo
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
+					<div class="col">
+						<div class="project-card card h-100">
+							<div class="card-img overflow-hidden">
+								<a
+									data-bs-toggle="modal"
+									data-bs-target="#modal-jejak-orang-utan-web"
+									style="cursor: pointer"
+								>
+									<img
+										src="./src/img/Jejak-orangutan-web.jpg"
+										class="card-img-top"
+										alt="Jejak Orangutan Website"
+									/>
+								</a>
+							</div>
+							<div class="card-body p-4">
+								<h5 class="card-title fw-bold fs-4">Jejak Orangutan Website</h5>
+								<p class="card-text fs-6">
+									An educational website that raises awareness about orangutan
+									conservation through engaging content and interactive design.
+								</p>
+								<!-- Button trigger modal -->
+								<button
+									type="button"
+									class="btn btn-project pe-5"
+									data-bs-toggle="modal"
+									data-bs-target="#modal-jejak-orang-utan-web"
+								>
+									See detail <i class="bi bi-arrow-right"></i>
+								</button>
 
-					<div class="col-lg-6">
-						<div class="skills-card">
-							<h3>Tools</h3>
+								<!-- Modal -->
+								<div
+									class="modal fade"
+									id="modal-jejak-orang-utan-web"
+									tabindex="-1"
+								>
+									<div class="modal-dialog modal-xl modal-dialog-centered">
+										<div class="modal-content border-0 rounded-4 shadow-lg">
+											<button
+												type="button"
+												class="btn-close position-absolute top-0 end-0 m-4 shadow-none z-3"
+												data-bs-dismiss="modal"
+											></button>
+
+											<div class="modal-body p-4">
+												<div class="row g-4">
+													<div class="col-lg-4">
+														<a
+															href="https://kevinarcharios.github.io/web-project-jejak-orangutan/"
+															target="_blank"
+														>
+															<img
+																src="./src/img/Jejak-orangutan-web-modal.jpg"
+																alt="Jejak Orangutan Website"
+																class="project-image img-fluid rounded-4 shadow-sm"
+															/>
+														</a>
+													</div>
+
+													<div
+														class="col-lg-8 d-flex flex-column justify-content-center"
+													>
+														<h2 class="fw-bold mb-3">
+															Jejak Orangutan Website
+														</h2>
+
+														<p class="text-secondary mb-4">
+															Jejak Orangutan is an educational website built
+															using HTML, CSS, and JavaScript with the goal of
+															increasing awareness about orangutan conservation
+															and environmental sustainability. The project
+															presents information through a structured and
+															engaging interface, making it easier for users to
+															learn about the challenges faced by orangutans and
+															the importance of protecting their natural
+															habitat. During development, I focused on creating
+															a responsive and accessible experience while
+															maintaining a clean visual design. This project
+															allowed me to practice front-end development
+															skills, content organization, and user experience
+															design while working on a meaningful environmental
+															topic.
+														</p>
+
+														<div class="d-flex flex-wrap gap-2 mb-4">
+															<span class="badge text-bg-light border px-3 py-2"
+																>HTML</span
+															>
+															<span class="badge text-bg-light border px-3 py-2"
+																>CSS</span
+															>
+															<span class="badge text-bg-light border px-3 py-2"
+																>JavaScript</span
+															>
+														</div>
+
+														<div class="d-flex gap-3 flex-wrap">
+															<a
+																href="https://github.com/KevinArcharios/web-project-jejak-orangutan"
+																target="_blank"
+																class="btn btn-outline-primary px-4 py-2 rounded-3 fw-semibold"
+															>
+																<i class="bi bi-github me-2"></i>
+																View Source
+															</a>
+
+															<a
+																href="https://kevinarcharios.github.io/web-project-jejak-orangutan/"
+																target="_blank"
+																class="btn px-4 py-2 rounded-3 fw-semibold text-white project-demo-btn"
+															>
+																<i class="bi bi-box-arrow-up-right me-2"></i>
+																Live Demo
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="project-card card h-100">
+							<div class="card-img overflow-hidden">
+								<a
+									data-bs-toggle="modal"
+									data-bs-target="#modal-jejak-orang-utan-framer"
+									style="cursor: pointer"
+								>
+									<img
+										src="./src/img/Jejak-orangutan-framer.jpg"
+										class="card-img-top"
+										alt="Jejak Orangutan Framer"
+									/>
+								</a>
+							</div>
+							<div class="card-body p-4">
+								<h5 class="card-title fw-bold fs-4">
+									Jejak Orangutan Framer Design
+								</h5>
+								<p class="card-text fs-6">
+									A modern landing page built with Framer to showcase orangutan
+									conservation through storytelling and visual design.
+								</p>
+								<!-- Button trigger modal -->
+								<button
+									type="button"
+									class="btn btn-project pe-5"
+									data-bs-toggle="modal"
+									data-bs-target="#modal-jejak-orang-utan-framer"
+								>
+									See detail <i class="bi bi-arrow-right"></i>
+								</button>
+
+								<!-- Modal -->
+								<div
+									class="modal fade"
+									id="modal-jejak-orang-utan-framer"
+									tabindex="-1"
+								>
+									<div class="modal-dialog modal-xl modal-dialog-centered">
+										<div class="modal-content border-0 rounded-4 shadow-lg">
+											<button
+												type="button"
+												class="btn-close position-absolute top-0 end-0 m-4 shadow-none z-3"
+												data-bs-dismiss="modal"
+											></button>
+
+											<div class="modal-body p-4">
+												<div class="row g-4">
+													<div class="col-lg-4">
+														<a
+															href="https://jejak-orang-utan.framer.website/"
+															target="_blank"
+														>
+															<img
+																src="./src/img/Jejak-orangutan-framer-modal.jpg"
+																alt="Jejak Orangutan Framer"
+																class="project-image img-fluid rounded-4 shadow-sm"
+															/>
+														</a>
+													</div>
+
+													<div
+														class="col-lg-8 d-flex flex-column justify-content-center"
+													>
+														<h2 class="fw-bold mb-3">
+															Jejak Orangutan Framer Design
+														</h2>
+
+														<p class="text-secondary mb-4">
+															Jejak Orangutan Landing Page is a modern web
+															experience designed and developed using Framer.
+															The project focuses on visual storytelling, smooth
+															interactions, and clean layouts to communicate the
+															importance of orangutan conservation in a more
+															engaging way. Rather than presenting information
+															in a traditional format, this landing page
+															emphasizes user engagement through modern design
+															techniques, responsive layouts, and carefully
+															crafted visual elements. Through this project, I
+															explored no-code development workflows and learned
+															how effective design can enhance both
+															communication and user experience.
+														</p>
+
+														<div class="d-flex flex-wrap gap-2 mb-4">
+															<span class="badge text-bg-light border px-3 py-2"
+																>Framer</span
+															>
+														</div>
+
+														<div class="d-flex gap-3 flex-wrap">
+															<a
+																href="https://framer.com/projects/Jejak-OrangUtan--mt3t8VWK9Gyp15NVXnqY-1AOLn"
+																target="_blank"
+																class="btn btn-outline-primary px-4 py-2 rounded-3 fw-semibold"
+															>
+																<i class="bi bi-github me-2"></i>
+																View Source
+															</a>
+
+															<a
+																href="https://jejak-orang-utan.framer.website/"
+																target="_blank"
+																class="btn px-4 py-2 rounded-3 fw-semibold text-white project-demo-btn"
+															>
+																<i class="bi bi-box-arrow-up-right me-2"></i>
+																Live Demo
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-
 		<!-- Projects Section End -->
+
+		<!-- Certificates Section Start -->
+		<section id="certificates" class="py-5">
+			<h2 class="skills-tag d-inline-block fs-5 fw-semibold mb-2">
+				My Certificates
+			</h2>
+		</section>
+		<!-- Certificates Section End -->
 
 		<!-- Bootstrap JS-->
 		<script
