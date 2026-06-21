@@ -1,5 +1,6 @@
 * {
 	font-family: "Plus Jakarta Sans", sans-serif;
+	box-sizing: border-box;
 }
 
 body {
@@ -250,12 +251,14 @@ body {
 }
 
 .skills-grid {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 	gap: 1rem;
 }
 
 .skill-item {
+	width: 105px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -366,3 +369,51 @@ body {
 	color: #fff;
 }
 /* Projects Section End */
+
+/* Cerificates Section Start */
+.certificate-tag {
+	color: #8b5cf6;
+}
+
+.certificate-title {
+	color: #0f172a;
+}
+
+.certificate-desc {
+	max-width: 600px;
+	line-height: 1.8;
+	color: #64748b;
+}
+
+.certificates-section {
+	background: #ffffff;
+}
+
+.certificate-card {
+	cursor: pointer;
+	transition: 0.3s ease;
+}
+
+.certificate-card:hover {
+	border: 1px solid #8a5cf687 !important;
+	box-shadow: 0 10px 20px rgba(138, 92, 246, 0.21) !important;
+	transform: translateY(-6px);
+}
+
+.certificate-image {
+	height: 12rem;
+	object-fit: cover;
+	transition: 0.4s ease;
+}
+
+.certificate-card:hover .certificate-image {
+	transform: scale(1.05);
+}
+
+.certificate-img {
+	width: 100%;
+	max-height: 90vh;
+	object-fit: cover;
+	object-position: top;
+}
+/* Cerificates Section End */

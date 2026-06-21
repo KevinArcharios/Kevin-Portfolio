@@ -1,3 +1,4 @@
+// Typing Effect
 const words = [
 	"Informatics Student",
 	"Front-End Developer",
@@ -36,3 +37,14 @@ function type() {
 }
 
 type();
+
+// Certificates modal
+function showCertificate(src) {
+	document.getElementById("certificatePreview").src = src;
+
+	const modal = new bootstrap.Modal(
+		document.getElementById("certificateModal"),
+	);
+
+	modal.show();
+}
