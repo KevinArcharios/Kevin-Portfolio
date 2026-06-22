@@ -122,8 +122,7 @@ document.addEventListener("DOMContentLoaded", () => {
 const words = [
 	"Informatics Student",
 	"Front-End Developer",
-	"Creative Thinker",
-	"Lifelong Learner",
+	"Still Learning",
 ];
 
 const text = document.getElementById("typing-text");

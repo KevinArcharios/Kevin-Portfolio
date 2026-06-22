@@ -452,6 +452,33 @@ body {
 		#f8fafc;
 }
 
+.about-img {
+	width: 31.25rem;
+	min-width: 31.25rem;
+}
+
+.about-image {
+	z-index: 2;
+	transform: scale(1.1);
+	object-fit: cover;
+	object-position: bottom center;
+	clip-path: url(#blobClip);
+	top: 0;
+	left: 0;
+	filter: drop-shadow(0 8px 24px rgba(59, 130, 246, 0.25));
+}
+
+.about-blob {
+	width: 34.375rem;
+	height: 40rem;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+	opacity: 0.25;
+	filter: blur(1px);
+}
+
 .about-card {
 	background: rgba(255, 255, 255, 0.8);
 	border: 1px solid rgba(18, 28, 52, 0.08);

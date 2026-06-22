@@ -279,16 +279,44 @@
 				class="hero-icon icon-js position-absolute"
 			/>
 		</section>
-		\
 		<!-- Hero Section End -->
 
 		<!-- About Section Start -->
 		<section id="about" class="d-flex px-4 py-5 position-relative">
-			<div class="z-3">
-				<img src="src/img/hero.webp" alt="About Image" width="500" class="" />
+			<div class="about-img z-3 d-none d-lg-block position-relative">
+				<svg
+					viewBox="0 0 200 200"
+					xmlns="http://www.w3.org/2000/svg"
+					class="about-blob position-absolute"
+				>
+					<defs>
+						<clipPath
+							id="blobClip"
+							clipPathUnits="objectBoundingBox"
+							transform="scale(0.005)"
+						>
+							<path
+								d="M46.3,-45.6C60.4,-32.1,72.6,-16.1,75.6,3C78.6,22.2,72.6,44.3,58.4,54.9C44.3,65.4,22.2,64.3,0.3,64C-21.5,63.7,-43.1,64.2,-59,53.6C-74.8,43.1,-85,21.5,-83.8,1.3C-82.5,-19,-69.8,-38,-53.9,-51.5C-38,-64.9,-19,-72.7,-1.5,-71.2C16.1,-69.7,32.1,-59,46.3,-45.6Z"
+								transform="translate(100 100)"
+							/>
+						</clipPath>
+					</defs>
+					<path
+						fill="#3B82F6"
+						d="M46.3,-45.6C60.4,-32.1,72.6,-16.1,75.6,3C78.6,22.2,72.6,44.3,58.4,54.9C44.3,65.4,22.2,64.3,0.3,64C-21.5,63.7,-43.1,64.2,-59,53.6C-74.8,43.1,-85,21.5,-83.8,1.3C-82.5,-19,-69.8,-38,-53.9,-51.5C-38,-64.9,-19,-72.7,-1.5,-71.2C16.1,-69.7,32.1,-59,46.3,-45.6Z"
+						transform="translate(100 100)"
+					/>
+				</svg>
+				<img
+					src="src/img/about.webp"
+					alt="About Image"
+					class="about-image position-absolute w-100 h-100"
+				/>
 			</div>
 
-			<div class="about-card flex p-5 z-3 me-5 rounded-5">
+			<div
+				class="about-card flex p-5 z-3 me-lg-5 m-auto rounded-5 flex-grow-1 w-100"
+			>
 				<h3 class="mb-1">Hi! 👋</h3>
 				<h2 class="fw-bold mb-2">
 					I'm <span class="fw-bold">Kevin</span> Ridwan Simanjuntak
@@ -307,12 +335,12 @@
 				</p>
 				<a
 					href="#projects"
-					class="btn-project btn p-3 me-3 d-inline-flex align-items-center gap-2 px-3 py-4 border-0 rounded-pill fs-6 fw-semibold"
+					class="btn-project btn me-3 d-inline-flex align-items-center gap-2 px-3 py-4 border-0 rounded-pill fs-6 fw-semibold"
 					>View Project <i class="bi bi-box-arrow-up-right ps-2"></i
 				></a>
 				<a
 					href="#contact"
-					class="btn-contact btn p-3 d-inline-flex align-items-center gap-2 px-3 py-4 rounded-pill"
+					class="btn-contact btn d-inline-flex align-items-center gap-2 px-3 py-4 rounded-pill"
 					>Contact me <i class="bi bi-telephone-inbound ps-2"></i
 				></a>
 			</div>
@@ -874,6 +902,27 @@
 								<h6 class="fw-bold mb-1">Microsoft Office Specialist</h6>
 
 								<p class="small text-secondary mb-0">Microsoft</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xl-3 col-lg-4 col-6">
+						<div
+							class="card border-0 shadow-sm rounded-4 overflow-hidden certificate-card"
+						>
+							<div class="overflow-hidden">
+								<img
+									src="./src/img/Grand-mos.webp"
+									alt="Certificate"
+									class="card-img-top certificate-image"
+									onclick="showCertificate(this.src)"
+								/>
+							</div>
+
+							<div class="card-body">
+								<h6 class="fw-bold mb-1">Grand MOS</h6>
+
+								<p class="small text-secondary mb-0">ST Bhinneka</p>
 							</div>
 						</div>
 					</div>
