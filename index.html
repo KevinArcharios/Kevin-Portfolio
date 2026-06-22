@@ -33,13 +33,197 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 
-	<body class="overflow-x-hidden">
+	<body class="overflow-x-hidden m-0">
 		<!-- Navbar Section Start -->
+		<header
+			id="navbar-default"
+			class="position-absolute top-0 start-0 w-100"
+			style="z-index: 10"
+		>
+			<nav class="navbar navbar-expand-lg px-0" aria-label="Main navigation">
+				<div class="container-xl">
+					<a
+						class="navbar-brand brand-logo text-dark"
+						href="#home"
+						aria-label="Kevin — Home"
+					>
+						KEVIN<span class="brand-dot">.</span>
+					</a>
+					<button
+						id="ham-default"
+						class="ham-btn d-lg-none ms-auto"
+						aria-label="Toggle navigation"
+						aria-expanded="false"
+						aria-controls="defaultNavMenu"
+					>
+						<span class="ham-line ham-top"></span>
+						<span class="ham-line ham-mid"></span>
+						<span class="ham-line ham-bot"></span>
+					</button>
+					<div
+						class="collapse navbar-collapse justify-content-end"
+						id="defaultNavMenu"
+					>
+						<ul class="navbar-nav nav-default gap-1">
+							<li class="nav-item">
+								<a
+									class="nav-link nav-default-link"
+									href="#home"
+									data-section="home"
+									>Home</a
+								>
+							</li>
+							<li class="nav-item">
+								<a
+									class="nav-link nav-default-link"
+									href="#about"
+									data-section="about"
+									>About</a
+								>
+							</li>
+							<li class="nav-item">
+								<a
+									class="nav-link nav-default-link"
+									href="#skills"
+									data-section="skills"
+									>Skills</a
+								>
+							</li>
+							<li class="nav-item">
+								<a
+									class="nav-link nav-default-link"
+									href="#projects"
+									data-section="projects"
+									>Projects</a
+								>
+							</li>
+							<li class="nav-item">
+								<a
+									class="nav-link nav-default-link"
+									href="#certificates"
+									data-section="certificates"
+									>Certificates</a
+								>
+							</li>
+							<li class="nav-item">
+								<a
+									class="nav-link nav-default-link"
+									href="#contact"
+									data-section="contact"
+									>Contact</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
 
+		<nav
+			id="navbar-floating"
+			class="nav-float"
+			role="navigation"
+			aria-label="Floating navigation"
+			aria-hidden="true"
+		>
+			<div
+				class="nav-float-inner d-flex align-items-center justify-content-between gap-3"
+			>
+				<a
+					class="brand-logo nav-float-brand"
+					href="#home"
+					aria-label="Kevin — Home"
+				>
+					KEVIN<span class="brand-dot">.</span>
+				</a>
+				<ul
+					class="nav-float-links d-none d-lg-flex align-items-center gap-1 list-unstyled mb-0"
+				>
+					<li>
+						<a class="nav-float-link" href="#home" data-section="home">Home</a>
+					</li>
+					<li>
+						<a class="nav-float-link" href="#about" data-section="about"
+							>About</a
+						>
+					</li>
+					<li>
+						<a class="nav-float-link" href="#skills" data-section="skills"
+							>Skills</a
+						>
+					</li>
+					<li>
+						<a class="nav-float-link" href="#projects" data-section="projects"
+							>Projects</a
+						>
+					</li>
+					<li>
+						<a
+							class="nav-float-link"
+							href="#certificates"
+							data-section="certificates"
+							>Certificates</a
+						>
+					</li>
+					<li>
+						<a class="nav-float-link" href="#contact" data-section="contact"
+							>Contact</a
+						>
+					</li>
+				</ul>
+				<button
+					id="hamburger-btn"
+					class="ham-btn d-lg-none"
+					aria-label="Toggle navigation"
+					aria-expanded="false"
+					aria-controls="mobile-menu"
+				>
+					<span class="ham-line ham-top"></span>
+					<span class="ham-line ham-mid"></span>
+					<span class="ham-line ham-bot"></span>
+				</button>
+			</div>
+			<div id="mobile-menu" class="mob-menu" aria-hidden="true">
+				<div class="mob-menu-inner">
+					<div class="mob-divider"></div>
+					<ul class="mob-nav list-unstyled mb-0">
+						<li>
+							<a class="mob-link" href="#home" data-section="home">Home</a>
+						</li>
+						<li>
+							<a class="mob-link" href="#about" data-section="about">About</a>
+						</li>
+						<li>
+							<a class="mob-link" href="#skills" data-section="skills"
+								>Skills</a
+							>
+						</li>
+						<li>
+							<a class="mob-link" href="#projects" data-section="projects"
+								>Projects</a
+							>
+						</li>
+						<li>
+							<a
+								class="mob-link"
+								href="#certificates"
+								data-section="certificates"
+								>Certificates</a
+							>
+						</li>
+						<li>
+							<a class="mob-link" href="#contact" data-section="contact"
+								>Contact</a
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 		<!-- Navbar Section End -->
 
 		<!-- Hero Section Start -->
-		<section id="hero" class="vh-100 position-relative overflow-hidden">
+		<section id="home" class="hero vh-100 position-relative overflow-hidden">
 			<img
 				src="./src/img/hero.webp"
 				alt="Hero Image"
@@ -95,7 +279,7 @@
 				class="hero-icon icon-js position-absolute"
 			/>
 		</section>
-
+		\
 		<!-- Hero Section End -->
 
 		<!-- About Section Start -->
@@ -1188,11 +1372,17 @@
 						<h6 class="footer-heading mb-4 fw-bold text-white">Currently</h6>
 
 						<div class="d-flex flex-column gap-3">
-							<div class="footer-status rounded-3">Learning Frontend Development</div>
+							<div class="footer-status rounded-3">
+								Learning Frontend Development
+							</div>
 
-							<div class="footer-status rounded-3">Building Personal Projects</div>
+							<div class="footer-status rounded-3">
+								Building Personal Projects
+							</div>
 
-							<div class="footer-status rounded-3">Exploring UI / UX Design</div>
+							<div class="footer-status rounded-3">
+								Exploring UI / UX Design
+							</div>
 						</div>
 					</div>
 				</div>
