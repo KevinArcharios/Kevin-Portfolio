@@ -143,7 +143,7 @@
 					class="nav-float-links d-none d-lg-flex align-items-center gap-1 list-unstyled mb-0"
 				>
 					<li>
-						<a class="nav-float-link" href="#home" data-section="home">Home</a>
+						<a class="nav-float-link" href="#navbar-default" data-section="home">Home</a>
 					</li>
 					<li>
 						<a class="nav-float-link" href="#about" data-section="about"
@@ -191,7 +191,7 @@
 					<div class="mob-divider"></div>
 					<ul class="mob-nav list-unstyled mb-0">
 						<li>
-							<a class="mob-link" href="#home" data-section="home">Home</a>
+							<a class="mob-link" href="#" data-section="home">Home</a>
 						</li>
 						<li>
 							<a class="mob-link" href="#about" data-section="about">About</a>
@@ -226,11 +226,14 @@
 		<!-- Navbar Section End -->
 
 		<!-- Hero Section Start -->
-		<section id="home" class="hero vh-100 position-relative overflow-hidden">
+		<section
+			id="home"
+			class="hero vh-100 position-relative z-1 overflow-hidden"
+		>
 			<img
 				src="./src/img/hero.webp"
 				alt="Hero Image"
-				class="hero-img position-absolute vh-100 start-50 translate-middle-x"
+				class="hero-img position-absolute vh-100 "
 			/>
 
 			<h1 class="ms-5">
@@ -239,11 +242,11 @@
 				<svg class="highlight" viewBox="0 0 500 60" preserveAspectRatio="none">
 					<path
 						d="M20 35
-      					C100 15, 180 50, 260 35
-								S420 20, 480 35
-          			L480 55
-              	C400 45, 300 65, 200 50
-                S80 45, 20 55 Z"
+									 C100 15, 180 50, 260 35
+									 S420 20, 480 35
+									 L480 55
+									 C400 45, 300 65, 200 50
+									 S80 45, 20 55 Z"
 					/>
 				</svg>
 			</h1>
@@ -282,12 +285,13 @@
 				class="hero-icon icon-js position-absolute"
 			/>
 		</section>
+
 		<!-- Hero Section End -->
 
 		<!-- About Section Start -->
 		<section
 			id="about"
-			class="about-section d-flex px-4 py-5 position-relative"
+			class="about-section d-flex px-4 py-5 position-relative z-2"
 		>
 			<div
 				class="about-img z-3 d-none d-lg-block position-relative"
@@ -358,7 +362,7 @@
 		<!-- About Section End -->
 
 		<!-- Skills Section Start -->
-		<section id="skills" class="skills-section py-5">
+		<section id="skills" class="skills-section py-5 position-relative z-2">
 			<div class="container">
 				<div class="row mb-5">
 					<div class="col-lg-8">
@@ -486,7 +490,7 @@
 		<!-- Skills Section End -->
 
 		<!-- Projects Section Start -->
-		<section id="projects" class="projects-section py-5">
+		<section id="projects" class="projects-section py-5 position-relative z-2">
 			<div class="container">
 				<div class="row mb-5">
 					<div class="col-lg-8">
@@ -885,7 +889,10 @@
 		<!-- Projects Section End -->
 
 		<!-- Certificates Section Start -->
-		<section id="certificates" class="certificates-section py-5">
+		<section
+			id="certificates"
+			class="certificates-section py-5 position-relative z-2"
+		>
 			<div class="container">
 				<div class="row justify-content-start mb-5">
 					<div class="col-lg-8">
@@ -1193,7 +1200,10 @@
 		<!-- Certificates Section End -->
 
 		<!-- Contact Section Start -->
-		<section id="contact" class="contact-section py-5">
+		<section
+			id="contact"
+			class="contact-section py-5 position-sticky top-0 z-2"
+		>
 			<div class="container">
 				<div class="row mb-5">
 					<div class="col-lg-8">
@@ -1379,7 +1389,7 @@
 		</section>
 		<!-- Contact Section End -->
 
-		<div class="footer-wave">
+		<div class="footer-wave position-relative z-3">
 			<svg viewBox="0 0 1440 100" preserveAspectRatio="none">
 				<path
 					fill="#1A2338"
@@ -1389,7 +1399,7 @@
 		</div>
 
 		<!-- Footer Section Start -->
-		<footer class="footer-section position-relative overflow-hidden">
+		<footer class="footer-section position-relative z-3 overflow-hidden">
 			<div
 				class="footer-watermark d-none d-lg-block position-absolute lh-1 text-white"
 			>
@@ -1550,6 +1560,7 @@
 		<script>
 			AOS.init({
 				duration: 1000,
+				easing: "ease-out-cubic",
 			});
 		</script>
 
