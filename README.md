@@ -5,8 +5,9 @@ Currently still in development and not finished yet.
 
 ## Tech Stack
 - HTML
-- Tailwind CSS
+- CSS
 - Bootstrap
+- Javascript
 
 ## Status
 Work in progress 🚧
